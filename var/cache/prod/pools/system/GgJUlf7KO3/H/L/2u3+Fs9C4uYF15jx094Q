@@ -1,0 +1,3 @@
+<?php //Akeneo_UserManagement_Component_Model_Group_%24GEDMO_TIMESTAMPABLE_CLASSMETADATA
+
+return [PHP_INT_MAX, []];

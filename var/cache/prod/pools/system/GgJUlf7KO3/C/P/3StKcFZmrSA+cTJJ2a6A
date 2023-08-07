@@ -1,0 +1,265 @@
+<?php //Akeneo__Pim__Structure__Component__Model__Family__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Pim\\Structure\\Bundle\\Doctrine\\ORM\\Repository\\FamilyRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'length' => 100,
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                    'created' => [
+                        'fieldName' => 'created',
+                        'type' => 'datetime',
+                        'columnName' => 'created',
+                    ],
+                    'updated' => [
+                        'fieldName' => 'updated',
+                        'type' => 'datetime',
+                        'columnName' => 'updated',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_family',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'familyVariants' => [
+                        'fieldName' => 'familyVariants',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyVariant',
+                        'mappedBy' => 'family',
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'orphanRemoval' => false,
+                    ],
+                    'translations' => [
+                        'fieldName' => 'translations',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyTranslation',
+                        'mappedBy' => 'foreignKey',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                            'remove',
+                        ],
+                        'orphanRemoval' => true,
+                        'indexBy' => 'locale',
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                    ],
+                    'requirements' => [
+                        'fieldName' => 'requirements',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+                        'mappedBy' => 'family',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                            'remove',
+                            'refresh',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => true,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                    ],
+                    'attributeAsLabel' => [
+                        'fieldName' => 'attributeAsLabel',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'label_attribute_id',
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'label_attribute_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'label_attribute_id' => 'label_attribute_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'label_attribute_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'attributeAsImage' => [
+                        'fieldName' => 'attributeAsImage',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'image_attribute_id',
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'image_attribute_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'image_attribute_id' => 'image_attribute_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'image_attribute_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'attributes' => [
+                        'fieldName' => 'attributes',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'joinTable' => [
+                            'name' => 'pim_catalog_family_attribute',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'family_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'attribute_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'inversedBy' => 'families',
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'family_id',
+                            'attribute_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'family_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'attribute_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

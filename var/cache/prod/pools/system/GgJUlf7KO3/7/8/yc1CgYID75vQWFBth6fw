@@ -1,0 +1,153 @@
+<?php //Akeneo__Pim__Enrichment__Component__Product__Model__ProductUniqueData__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\ProductUniqueData',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\ProductUniqueData',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Pim\\Enrichment\\Bundle\\Doctrine\\ORM\\Repository\\ProductUniqueDataRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'rawData' => [
+                        'fieldName' => 'rawData',
+                        'type' => 'string',
+                        'columnName' => 'raw_data',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'raw_data' => 'rawData',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'rawData' => 'raw_data',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_product_unique_data',
+                    'uniqueConstraints' => [
+                        'unique_value_idx' => [
+                            'columns' => [
+                                'attribute_id',
+                                'raw_data',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'product' => [
+                        'fieldName' => 'product',
+                        'targetEntity' => 'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\Product',
+                        'inversedBy' => 'uniqueData',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'uuid',
+                                'name' => 'product_uuid',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\ProductUniqueData',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'product_uuid' => 'uuid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'product_uuid' => 'product_uuid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'uuid' => 'product_uuid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'attribute' => [
+                        'fieldName' => 'attribute',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'attribute_id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\ProductUniqueData',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'attribute_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'attribute_id' => 'attribute_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'attribute_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

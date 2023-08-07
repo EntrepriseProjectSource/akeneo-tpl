@@ -1,0 +1,17 @@
+<?php //Akeneo_Category_Infrastructure_Component_Model_Category_%24GEDMO_TIMESTAMPABLE_CLASSMETADATA
+
+return [PHP_INT_MAX, [
+    'create' => [
+        'created',
+    ],
+    'change' => [
+        [
+            'field' => 'updated',
+            'trackedField' => [
+                'parent',
+            ],
+            'value' => null,
+        ],
+    ],
+    'useObjectClass' => 'Akeneo\\Category\\Infrastructure\\Component\\Model\\Category',
+]];

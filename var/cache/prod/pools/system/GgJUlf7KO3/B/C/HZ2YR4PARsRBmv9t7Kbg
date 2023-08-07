@@ -1,0 +1,3 @@
+<?php //Akeneo_Pim_Structure_Component_Model_AssociationType_%24GEDMO_TREE_CLASSMETADATA
+
+return [PHP_INT_MAX, []];

@@ -1,0 +1,95 @@
+<?php //Akeneo__UserManagement__Component__Model__Role__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\UserManagement\\Component\\Model\\Role',
+            ],
+            'namespace' => [
+                'Akeneo\\UserManagement\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\UserManagement\\Component\\Model\\Role',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\UserManagement\\Bundle\\Doctrine\\ORM\\Repository\\RoleRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'smallint',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'role' => [
+                        'fieldName' => 'role',
+                        'type' => 'string',
+                        'unique' => true,
+                        'nullable' => false,
+                        'columnName' => 'role',
+                    ],
+                    'label' => [
+                        'fieldName' => 'label',
+                        'type' => 'string',
+                        'length' => 255,
+                        'columnName' => 'label',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'length' => 30,
+                        'options' => [
+                            'default' => 'default',
+                        ],
+                        'nullable' => false,
+                        'columnName' => 'type',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'role' => 'role',
+                    'label' => 'label',
+                    'type' => 'type',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'role' => 'role',
+                    'label' => 'label',
+                    'type' => 'type',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'oro_access_role',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

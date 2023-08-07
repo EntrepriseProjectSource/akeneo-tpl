@@ -1,0 +1,188 @@
+<?php //Akeneo__Pim__Structure__Component__Model__AttributeRequirement__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Pim\\Structure\\Bundle\\Doctrine\\ORM\\Repository\\AttributeRequirementRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'required' => [
+                        'fieldName' => 'required',
+                        'type' => 'boolean',
+                        'columnName' => 'required',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'required' => 'required',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'required' => 'required',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_attribute_requirement',
+                    'uniqueConstraints' => [
+                        'searchunique_idx' => [
+                            'columns' => [
+                                'channel_id',
+                                'family_id',
+                                'attribute_id',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'family' => [
+                        'fieldName' => 'family',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Family',
+                        'inversedBy' => 'requirements',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'family_id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'family_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'family_id' => 'family_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'family_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'attribute' => [
+                        'fieldName' => 'attribute',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'attribute_id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'attribute_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'attribute_id' => 'attribute_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'attribute_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'channel' => [
+                        'fieldName' => 'channel',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'channel_id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeRequirement',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'channel_id' => 'channel_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'channel_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,153 @@
+<?php //Oro__Bundle__ConfigBundle__Entity__ConfigValue__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Oro\\Bundle\\ConfigBundle\\Entity\\ConfigValue',
+            ],
+            'namespace' => [
+                'Oro\\Bundle\\ConfigBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Oro\\Bundle\\ConfigBundle\\Entity\\ConfigValue',
+            ],
+            'customRepositoryClassName' => [
+                'Oro\\Bundle\\ConfigBundle\\Entity\\Repository\\ConfigValueRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'name',
+                    ],
+                    'section' => [
+                        'fieldName' => 'section',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 50,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'section',
+                    ],
+                    'value' => [
+                        'fieldName' => 'value',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'value',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'section' => 'section',
+                    'value' => 'value',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'section' => 'section',
+                    'value' => 'value',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'oro_config_value',
+                    'uniqueConstraints' => [
+                        'CONFIG_VALUE_UQ_ENTITY' => [
+                            'columns' => [
+                                'name',
+                                'section',
+                                'config_id',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'config' => [
+                        'fieldName' => 'config',
+                        'joinColumns' => [
+                            [
+                                'name' => 'config_id',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'values',
+                        'targetEntity' => 'Oro\\Bundle\\ConfigBundle\\Entity\\Config',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Oro\\Bundle\\ConfigBundle\\Entity\\ConfigValue',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'config_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'config_id' => 'config_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'config_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

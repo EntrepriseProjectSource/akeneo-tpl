@@ -1,0 +1,116 @@
+<?php //Akeneo__Pim__Structure__Component__Model__GroupType__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\GroupType',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\GroupType',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Pim\\Structure\\Bundle\\Doctrine\\ORM\\Repository\\GroupTypeRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'length' => 100,
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_group_type',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'groups' => [
+                        'fieldName' => 'groups',
+                        'targetEntity' => 'Akeneo\\Pim\\Enrichment\\Component\\Product\\Model\\Group',
+                        'mappedBy' => 'type',
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\GroupType',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'orphanRemoval' => false,
+                    ],
+                    'translations' => [
+                        'fieldName' => 'translations',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\GroupTypeTranslation',
+                        'mappedBy' => 'foreignKey',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                        ],
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\GroupType',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

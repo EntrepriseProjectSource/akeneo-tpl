@@ -1,0 +1,110 @@
+<?php //Akeneo__Tool__Bundle__ApiBundle__Entity__Client__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\Client',
+            ],
+            'namespace' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\Client',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'randomId' => [
+                        'fieldName' => 'randomId',
+                        'type' => 'string',
+                        'columnName' => 'random_id',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'redirectUris' => [
+                        'fieldName' => 'redirectUris',
+                        'type' => 'array',
+                        'columnName' => 'redirect_uris',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'secret' => [
+                        'fieldName' => 'secret',
+                        'type' => 'string',
+                        'columnName' => 'secret',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'allowedGrantTypes' => [
+                        'fieldName' => 'allowedGrantTypes',
+                        'type' => 'array',
+                        'columnName' => 'allowed_grant_types',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'label' => [
+                        'fieldName' => 'label',
+                        'type' => 'string',
+                        'length' => 255,
+                        'nullable' => true,
+                        'columnName' => 'label',
+                    ],
+                    'marketplacePublicAppId' => [
+                        'fieldName' => 'marketplacePublicAppId',
+                        'type' => 'string',
+                        'columnName' => 'marketplace_public_app_id',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'random_id' => 'randomId',
+                    'redirect_uris' => 'redirectUris',
+                    'secret' => 'secret',
+                    'allowed_grant_types' => 'allowedGrantTypes',
+                    'id' => 'id',
+                    'label' => 'label',
+                    'marketplace_public_app_id' => 'marketplacePublicAppId',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'randomId' => 'random_id',
+                    'redirectUris' => 'redirect_uris',
+                    'secret' => 'secret',
+                    'allowedGrantTypes' => 'allowed_grant_types',
+                    'id' => 'id',
+                    'label' => 'label',
+                    'marketplacePublicAppId' => 'marketplace_public_app_id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_api_client',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

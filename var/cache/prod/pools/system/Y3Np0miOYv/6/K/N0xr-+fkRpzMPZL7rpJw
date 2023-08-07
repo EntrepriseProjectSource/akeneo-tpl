@@ -1,0 +1,3 @@
+<?php //Oro%255CBundle%255CConfigBundle%255CEntity%255CRepository%255CConfigRepository
+
+return [PHP_INT_MAX, []];

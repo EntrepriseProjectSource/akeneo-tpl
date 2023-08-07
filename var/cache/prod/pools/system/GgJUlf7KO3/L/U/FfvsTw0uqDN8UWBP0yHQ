@@ -1,0 +1,78 @@
+<?php //FOS__OAuthServerBundle__Entity__AuthCode__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'FOS\\OAuthServerBundle\\Entity\\AuthCode',
+            ],
+            'namespace' => [
+                'FOS\\OAuthServerBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'FOS\\OAuthServerBundle\\Entity\\AuthCode',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'fieldMappings' => [
+                [
+                    'token' => [
+                        'fieldName' => 'token',
+                        'type' => 'string',
+                        'columnName' => 'token',
+                        'unique' => true,
+                    ],
+                    'redirectUri' => [
+                        'fieldName' => 'redirectUri',
+                        'type' => 'text',
+                        'columnName' => 'redirect_uri',
+                    ],
+                    'expiresAt' => [
+                        'fieldName' => 'expiresAt',
+                        'type' => 'integer',
+                        'columnName' => 'expires_at',
+                        'nullable' => true,
+                    ],
+                    'scope' => [
+                        'fieldName' => 'scope',
+                        'type' => 'string',
+                        'columnName' => 'scope',
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'token' => 'token',
+                    'redirect_uri' => 'redirectUri',
+                    'expires_at' => 'expiresAt',
+                    'scope' => 'scope',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'token' => 'token',
+                    'redirectUri' => 'redirect_uri',
+                    'expiresAt' => 'expires_at',
+                    'scope' => 'scope',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'AuthCode',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

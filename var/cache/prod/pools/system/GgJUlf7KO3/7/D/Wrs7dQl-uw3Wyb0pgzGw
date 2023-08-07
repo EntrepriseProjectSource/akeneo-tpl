@@ -1,0 +1,82 @@
+<?php //Akeneo__Channel__Infrastructure__Component__Model__Currency__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Currency',
+            ],
+            'namespace' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Currency',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Channel\\Infrastructure\\Doctrine\\Repository\\CurrencyRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'length' => 3,
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                    'activated' => [
+                        'fieldName' => 'activated',
+                        'type' => 'boolean',
+                        'columnName' => 'is_activated',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'is_activated' => 'activated',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'activated' => 'is_activated',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_currency',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

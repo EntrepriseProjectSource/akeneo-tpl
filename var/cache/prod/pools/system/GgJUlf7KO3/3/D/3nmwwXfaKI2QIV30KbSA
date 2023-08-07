@@ -1,0 +1,158 @@
+<?php //Akeneo__Tool__Bundle__ApiBundle__Entity__AccessToken__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\AccessToken',
+            ],
+            'namespace' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\AccessToken',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'token' => [
+                        'fieldName' => 'token',
+                        'type' => 'string',
+                        'columnName' => 'token',
+                        'unique' => true,
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\AccessToken',
+                    ],
+                    'expiresAt' => [
+                        'fieldName' => 'expiresAt',
+                        'type' => 'integer',
+                        'columnName' => 'expires_at',
+                        'nullable' => true,
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\AccessToken',
+                    ],
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'scope' => [
+                        'fieldName' => 'scope',
+                        'length' => 1000,
+                        'nullable' => true,
+                        'type' => 'string',
+                        'columnName' => 'scope',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'token' => 'token',
+                    'expires_at' => 'expiresAt',
+                    'id' => 'id',
+                    'scope' => 'scope',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'token' => 'token',
+                    'expiresAt' => 'expires_at',
+                    'id' => 'id',
+                    'scope' => 'scope',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_api_access_token',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'client' => [
+                        'fieldName' => 'client',
+                        'targetEntity' => 'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\Client',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'client',
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\AccessToken',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'client' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'client' => 'client',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'client',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'user' => [
+                        'fieldName' => 'user',
+                        'targetEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'user',
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Tool\\Bundle\\ApiBundle\\Entity\\AccessToken',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'user' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'user' => 'user',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'user',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

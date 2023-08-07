@@ -1,0 +1,143 @@
+<?php //Akeneo__Pim__Structure__Component__Model__AttributeGroup__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeGroup',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeGroup',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Pim\\Structure\\Bundle\\Doctrine\\ORM\\Repository\\AttributeGroupRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'length' => 100,
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                    'sortOrder' => [
+                        'fieldName' => 'sortOrder',
+                        'type' => 'integer',
+                        'columnName' => 'sort_order',
+                    ],
+                    'created' => [
+                        'fieldName' => 'created',
+                        'type' => 'datetime',
+                        'columnName' => 'created',
+                    ],
+                    'updated' => [
+                        'fieldName' => 'updated',
+                        'type' => 'datetime',
+                        'columnName' => 'updated',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'sort_order' => 'sortOrder',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'sortOrder' => 'sort_order',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_attribute_group',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'attributes' => [
+                        'fieldName' => 'attributes',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\Attribute',
+                        'mappedBy' => 'group',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                        ],
+                        'orderBy' => [
+                            'sortOrder' => 'ASC',
+                        ],
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeGroup',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                        'orphanRemoval' => false,
+                    ],
+                    'translations' => [
+                        'fieldName' => 'translations',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeGroupTranslation',
+                        'mappedBy' => 'foreignKey',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\AttributeGroup',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

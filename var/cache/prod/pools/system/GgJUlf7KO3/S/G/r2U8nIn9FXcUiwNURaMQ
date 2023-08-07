@@ -1,0 +1,233 @@
+<?php //Akeneo__Channel__Infrastructure__Component__Model__Channel__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+            ],
+            'namespace' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Channel\\Infrastructure\\Doctrine\\Repository\\ChannelRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'length' => 100,
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                    'conversionUnits' => [
+                        'fieldName' => 'conversionUnits',
+                        'type' => 'array',
+                        'nullable' => false,
+                        'columnName' => 'conversionUnits',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'conversionUnits' => 'conversionUnits',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'conversionUnits' => 'conversionUnits',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_channel',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'translations' => [
+                        'fieldName' => 'translations',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\ChannelTranslation',
+                        'mappedBy' => 'foreignKey',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                            'remove',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                    ],
+                    'category' => [
+                        'fieldName' => 'category',
+                        'targetEntity' => 'Akeneo\\Category\\Infrastructure\\Component\\Model\\Category',
+                        'inversedBy' => 'channels',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'category_id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'category_id' => 'category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'category_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'currencies' => [
+                        'fieldName' => 'currencies',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Currency',
+                        'joinTable' => [
+                            'name' => 'pim_catalog_channel_currency',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'channel_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'currency_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'channel_id',
+                            'currency_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'currency_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'locales' => [
+                        'fieldName' => 'locales',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Locale',
+                        'joinTable' => [
+                            'name' => 'pim_catalog_channel_locale',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'channel_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'locale_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'inversedBy' => 'channels',
+                        'cascade' => [
+                            'persist',
+                            'detach',
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => true,
+                        'joinTableColumns' => [
+                            'channel_id',
+                            'locale_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'locale_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

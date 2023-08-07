@@ -1,0 +1,261 @@
+<?php //Akeneo__Tool__Component__Batch__Model__JobExecution__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model\\JobExecution',
+            ],
+            'namespace' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model\\JobExecution',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'pid' => [
+                        'fieldName' => 'pid',
+                        'type' => 'integer',
+                        'columnName' => 'pid',
+                        'nullable' => true,
+                    ],
+                    'user' => [
+                        'fieldName' => 'user',
+                        'type' => 'string',
+                        'columnName' => 'user',
+                        'nullable' => true,
+                    ],
+                    'status' => [
+                        'fieldName' => 'status',
+                        'type' => 'integer',
+                        'columnName' => 'status',
+                    ],
+                    'startTime' => [
+                        'fieldName' => 'startTime',
+                        'type' => 'datetime',
+                        'columnName' => 'start_time',
+                        'nullable' => true,
+                    ],
+                    'endTime' => [
+                        'fieldName' => 'endTime',
+                        'type' => 'datetime',
+                        'columnName' => 'end_time',
+                        'nullable' => true,
+                    ],
+                    'createTime' => [
+                        'fieldName' => 'createTime',
+                        'type' => 'datetime',
+                        'columnName' => 'create_time',
+                        'nullable' => true,
+                    ],
+                    'updatedTime' => [
+                        'fieldName' => 'updatedTime',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_time',
+                        'nullable' => true,
+                    ],
+                    'healthCheckTime' => [
+                        'fieldName' => 'healthCheckTime',
+                        'type' => 'datetime',
+                        'columnName' => 'health_check_time',
+                        'nullable' => true,
+                    ],
+                    'exitCode' => [
+                        'fieldName' => 'exitCode',
+                        'type' => 'string',
+                        'columnName' => 'exit_code',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'exitDescription' => [
+                        'fieldName' => 'exitDescription',
+                        'type' => 'text',
+                        'columnName' => 'exit_description',
+                        'nullable' => true,
+                    ],
+                    'failureExceptions' => [
+                        'fieldName' => 'failureExceptions',
+                        'type' => 'array',
+                        'columnName' => 'failure_exceptions',
+                        'nullable' => true,
+                    ],
+                    'logFile' => [
+                        'fieldName' => 'logFile',
+                        'type' => 'string',
+                        'columnName' => 'log_file',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'rawParameters' => [
+                        'fieldName' => 'rawParameters',
+                        'type' => 'json',
+                        'columnName' => 'raw_parameters',
+                    ],
+                    'isStoppable' => [
+                        'fieldName' => 'isStoppable',
+                        'type' => 'boolean',
+                        'columnName' => 'is_stoppable',
+                        'options' => [
+                            'default' => 0,
+                        ],
+                    ],
+                    'stepCount' => [
+                        'fieldName' => 'stepCount',
+                        'type' => 'integer',
+                        'columnName' => 'step_count',
+                        'options' => [
+                            'default' => 1,
+                        ],
+                    ],
+                    'isVisible' => [
+                        'fieldName' => 'isVisible',
+                        'type' => 'boolean',
+                        'columnName' => 'is_visible',
+                        'options' => [
+                            'default' => 1,
+                        ],
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'pid' => 'pid',
+                    'user' => 'user',
+                    'status' => 'status',
+                    'start_time' => 'startTime',
+                    'end_time' => 'endTime',
+                    'create_time' => 'createTime',
+                    'updated_time' => 'updatedTime',
+                    'health_check_time' => 'healthCheckTime',
+                    'exit_code' => 'exitCode',
+                    'exit_description' => 'exitDescription',
+                    'failure_exceptions' => 'failureExceptions',
+                    'log_file' => 'logFile',
+                    'raw_parameters' => 'rawParameters',
+                    'is_stoppable' => 'isStoppable',
+                    'step_count' => 'stepCount',
+                    'is_visible' => 'isVisible',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'pid' => 'pid',
+                    'user' => 'user',
+                    'status' => 'status',
+                    'startTime' => 'start_time',
+                    'endTime' => 'end_time',
+                    'createTime' => 'create_time',
+                    'updatedTime' => 'updated_time',
+                    'healthCheckTime' => 'health_check_time',
+                    'exitCode' => 'exit_code',
+                    'exitDescription' => 'exit_description',
+                    'failureExceptions' => 'failure_exceptions',
+                    'logFile' => 'log_file',
+                    'rawParameters' => 'raw_parameters',
+                    'isStoppable' => 'is_stoppable',
+                    'stepCount' => 'step_count',
+                    'isVisible' => 'is_visible',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'akeneo_batch_job_execution',
+                ],
+            ],
+            'entityListeners' => [
+                [
+                    'postLoad' => [
+                        [
+                            'class' => '\\Akeneo\\Tool\\Bundle\\BatchBundle\\EventListener\\LoadJobParametersListener',
+                            'method' => 'postLoad',
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'stepExecutions' => [
+                        'fieldName' => 'stepExecutions',
+                        'targetEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\StepExecution',
+                        'mappedBy' => 'jobExecution',
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\JobExecution',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                    'jobInstance' => [
+                        'fieldName' => 'jobInstance',
+                        'targetEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\JobInstance',
+                        'inversedBy' => 'jobExecutions',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'job_instance_id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\JobExecution',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'job_instance_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'job_instance_id' => 'job_instance_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'job_instance_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

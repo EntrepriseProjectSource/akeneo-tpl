@@ -1,0 +1,125 @@
+<?php //Akeneo__Pim__Structure__Component__Model__FamilyVariantTranslation__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyVariantTranslation',
+            ],
+            'namespace' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyVariantTranslation',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'label' => [
+                        'fieldName' => 'label',
+                        'type' => 'string',
+                        'length' => 100,
+                        'nullable' => true,
+                        'columnName' => 'label',
+                    ],
+                    'locale' => [
+                        'fieldName' => 'locale',
+                        'type' => 'string',
+                        'length' => 20,
+                        'columnName' => 'locale',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'label' => 'label',
+                    'locale' => 'locale',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'label' => 'label',
+                    'locale' => 'locale',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'pim_catalog_family_variant_translation',
+                    'uniqueConstraints' => [
+                        'locale_foreign_key_idx' => [
+                            'columns' => [
+                                'locale',
+                                'foreign_key',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'foreignKey' => [
+                        'fieldName' => 'foreignKey',
+                        'targetEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyVariant',
+                        'inversedBy' => 'translations',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'foreign_key',
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\Pim\\Structure\\Component\\Model\\FamilyVariantTranslation',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'foreign_key' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'foreign_key' => 'foreign_key',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'foreign_key',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

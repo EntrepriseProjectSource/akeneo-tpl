@@ -1,0 +1,607 @@
+<?php //Akeneo__UserManagement__Component__Model__User__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\UserManagement\\Component\\Model\\User',
+            ],
+            'namespace' => [
+                'Akeneo\\UserManagement\\Component\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\UserManagement\\Component\\Model\\User',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\UserManagement\\Bundle\\Doctrine\\ORM\\Repository\\UserRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'username' => [
+                        'fieldName' => 'username',
+                        'type' => 'string',
+                        'length' => 255,
+                        'unique' => true,
+                        'columnName' => 'username',
+                    ],
+                    'email' => [
+                        'fieldName' => 'email',
+                        'type' => 'string',
+                        'length' => 255,
+                        'unique' => true,
+                        'columnName' => 'email',
+                    ],
+                    'namePrefix' => [
+                        'fieldName' => 'namePrefix',
+                        'type' => 'string',
+                        'columnName' => 'name_prefix',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'columnName' => 'first_name',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'middleName' => [
+                        'fieldName' => 'middleName',
+                        'type' => 'string',
+                        'columnName' => 'middle_name',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'columnName' => 'last_name',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'nameSuffix' => [
+                        'fieldName' => 'nameSuffix',
+                        'type' => 'string',
+                        'columnName' => 'name_suffix',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'image' => [
+                        'fieldName' => 'image',
+                        'type' => 'string',
+                        'length' => 255,
+                        'nullable' => true,
+                        'columnName' => 'image',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'options' => [
+                            'default' => true,
+                        ],
+                        'columnName' => 'enabled',
+                    ],
+                    'salt' => [
+                        'fieldName' => 'salt',
+                        'type' => 'string',
+                        'columnName' => 'salt',
+                    ],
+                    'password' => [
+                        'fieldName' => 'password',
+                        'type' => 'string',
+                        'columnName' => 'password',
+                    ],
+                    'confirmationToken' => [
+                        'fieldName' => 'confirmationToken',
+                        'type' => 'string',
+                        'columnName' => 'confirmation_token',
+                        'nullable' => true,
+                    ],
+                    'passwordRequestedAt' => [
+                        'fieldName' => 'passwordRequestedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'password_requested',
+                        'nullable' => true,
+                    ],
+                    'lastLogin' => [
+                        'fieldName' => 'lastLogin',
+                        'type' => 'datetime',
+                        'columnName' => 'last_login',
+                        'nullable' => true,
+                    ],
+                    'loginCount' => [
+                        'fieldName' => 'loginCount',
+                        'type' => 'integer',
+                        'columnName' => 'login_count',
+                        'options' => [
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'nullable' => false,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'createdAt',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updatedAt',
+                    ],
+                    'productGridFilters' => [
+                        'fieldName' => 'productGridFilters',
+                        'type' => 'json',
+                        'columnName' => 'product_grid_filters',
+                        'nullable' => true,
+                    ],
+                    'emailNotifications' => [
+                        'fieldName' => 'emailNotifications',
+                        'type' => 'boolean',
+                        'options' => [
+                            'default' => false,
+                        ],
+                        'columnName' => 'emailNotifications',
+                    ],
+                    'phone' => [
+                        'fieldName' => 'phone',
+                        'type' => 'string',
+                        'length' => 20,
+                        'nullable' => true,
+                        'columnName' => 'phone',
+                    ],
+                    'timezone' => [
+                        'fieldName' => 'timezone',
+                        'type' => 'string',
+                        'length' => 30,
+                        'nullable' => false,
+                        'columnName' => 'timezone',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'user_type',
+                        'length' => 20,
+                        'options' => [
+                            'default' => 'user',
+                        ],
+                        'nullable' => false,
+                    ],
+                    'properties' => [
+                        'fieldName' => 'properties',
+                        'type' => 'json',
+                        'columnName' => 'properties',
+                    ],
+                    'consecutiveAuthenticationFailureCounter' => [
+                        'fieldName' => 'consecutiveAuthenticationFailureCounter',
+                        'type' => 'integer',
+                        'columnName' => 'consecutive_authentication_failure_counter',
+                        'options' => [
+                            'default' => 0,
+                            'unsigned' => true,
+                        ],
+                        'nullable' => false,
+                    ],
+                    'authenticationFailureResetDate' => [
+                        'fieldName' => 'authenticationFailureResetDate',
+                        'type' => 'datetime',
+                        'columnName' => 'authentication_failure_reset_date',
+                        'nullable' => true,
+                    ],
+                    'profile' => [
+                        'fieldName' => 'profile',
+                        'type' => 'string',
+                        'length' => 255,
+                        'nullable' => true,
+                        'columnName' => 'profile',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'username' => 'username',
+                    'email' => 'email',
+                    'name_prefix' => 'namePrefix',
+                    'first_name' => 'firstName',
+                    'middle_name' => 'middleName',
+                    'last_name' => 'lastName',
+                    'name_suffix' => 'nameSuffix',
+                    'image' => 'image',
+                    'enabled' => 'enabled',
+                    'salt' => 'salt',
+                    'password' => 'password',
+                    'confirmation_token' => 'confirmationToken',
+                    'password_requested' => 'passwordRequestedAt',
+                    'last_login' => 'lastLogin',
+                    'login_count' => 'loginCount',
+                    'createdAt' => 'createdAt',
+                    'updatedAt' => 'updatedAt',
+                    'product_grid_filters' => 'productGridFilters',
+                    'emailNotifications' => 'emailNotifications',
+                    'phone' => 'phone',
+                    'timezone' => 'timezone',
+                    'user_type' => 'type',
+                    'properties' => 'properties',
+                    'consecutive_authentication_failure_counter' => 'consecutiveAuthenticationFailureCounter',
+                    'authentication_failure_reset_date' => 'authenticationFailureResetDate',
+                    'profile' => 'profile',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'username' => 'username',
+                    'email' => 'email',
+                    'namePrefix' => 'name_prefix',
+                    'firstName' => 'first_name',
+                    'middleName' => 'middle_name',
+                    'lastName' => 'last_name',
+                    'nameSuffix' => 'name_suffix',
+                    'image' => 'image',
+                    'enabled' => 'enabled',
+                    'salt' => 'salt',
+                    'password' => 'password',
+                    'confirmationToken' => 'confirmation_token',
+                    'passwordRequestedAt' => 'password_requested',
+                    'lastLogin' => 'last_login',
+                    'loginCount' => 'login_count',
+                    'createdAt' => 'createdAt',
+                    'updatedAt' => 'updatedAt',
+                    'productGridFilters' => 'product_grid_filters',
+                    'emailNotifications' => 'emailNotifications',
+                    'phone' => 'phone',
+                    'timezone' => 'timezone',
+                    'type' => 'user_type',
+                    'properties' => 'properties',
+                    'consecutiveAuthenticationFailureCounter' => 'consecutive_authentication_failure_counter',
+                    'authenticationFailureResetDate' => 'authentication_failure_reset_date',
+                    'profile' => 'profile',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'oro_user',
+                ],
+            ],
+            'lifecycleCallbacks' => [
+                [
+                    'prePersist' => [
+                        'beforeSave',
+                    ],
+                    'preUpdate' => [
+                        'preUpdate',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'roles' => [
+                        'fieldName' => 'roles',
+                        'targetEntity' => 'Akeneo\\UserManagement\\Component\\Model\\Role',
+                        'joinTable' => [
+                            'name' => 'oro_user_access_role',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'user_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'role_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'user_id',
+                            'role_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'role_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'groups' => [
+                        'fieldName' => 'groups',
+                        'targetEntity' => 'Akeneo\\UserManagement\\Component\\Model\\Group',
+                        'joinTable' => [
+                            'name' => 'oro_user_access_group',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'user_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'group_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'user_id',
+                            'group_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'group_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'defaultGridViews' => [
+                        'fieldName' => 'defaultGridViews',
+                        'targetEntity' => 'Oro\\Bundle\\PimDataGridBundle\\Entity\\DatagridView',
+                        'joinTable' => [
+                            'name' => 'pim_user_default_datagrid_view',
+                            'joinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'user_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'referencedColumnName' => 'id',
+                                    'name' => 'view_id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'user_id',
+                            'view_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'view_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'avatar' => [
+                        'fieldName' => 'avatar',
+                        'targetEntity' => 'Akeneo\\Tool\\Component\\FileStorage\\Model\\FileInfo',
+                        'joinColumns' => [
+                            [
+                                'referencedColumnName' => 'id',
+                                'name' => 'file_info_id',
+                                'unique' => true,
+                            ],
+                        ],
+                        'type' => 1,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'file_info_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'file_info_id' => 'file_info_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'file_info_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'catalogLocale' => [
+                        'fieldName' => 'catalogLocale',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Locale',
+                        'joinColumns' => [
+                            [
+                                'name' => 'catalogLocale_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'catalogLocale_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'catalogLocale_id' => 'catalogLocale_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'catalogLocale_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'uiLocale' => [
+                        'fieldName' => 'uiLocale',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Locale',
+                        'joinColumns' => [
+                            [
+                                'name' => 'ui_locale_id',
+                                'nullable' => false,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'ui_locale_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'ui_locale_id' => 'ui_locale_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'ui_locale_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'catalogScope' => [
+                        'fieldName' => 'catalogScope',
+                        'targetEntity' => 'Akeneo\\Channel\\Infrastructure\\Component\\Model\\Channel',
+                        'joinColumns' => [
+                            [
+                                'name' => 'catalogScope_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'catalogScope_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'catalogScope_id' => 'catalogScope_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'catalogScope_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'defaultTree' => [
+                        'fieldName' => 'defaultTree',
+                        'targetEntity' => 'Akeneo\\Category\\Infrastructure\\Component\\Model\\Category',
+                        'joinColumns' => [
+                            [
+                                'name' => 'defaultTree_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Akeneo\\UserManagement\\Component\\Model\\User',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'defaultTree_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'defaultTree_id' => 'defaultTree_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'defaultTree_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

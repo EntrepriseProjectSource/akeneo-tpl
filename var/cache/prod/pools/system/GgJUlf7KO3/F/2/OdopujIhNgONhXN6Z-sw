@@ -1,0 +1,168 @@
+<?php //Akeneo__Tool__Component__Batch__Model__JobInstance__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model\\JobInstance',
+            ],
+            'namespace' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model',
+            ],
+            'rootEntityName' => [
+                'Akeneo\\Tool\\Component\\Batch\\Model\\JobInstance',
+            ],
+            'customRepositoryClassName' => [
+                'Akeneo\\Tool\\Bundle\\BatchBundle\\Job\\JobInstanceRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'length' => 100,
+                        'nullable' => false,
+                    ],
+                    'label' => [
+                        'fieldName' => 'label',
+                        'type' => 'string',
+                        'columnName' => 'label',
+                        'length' => 255,
+                        'nullable' => true,
+                    ],
+                    'jobName' => [
+                        'fieldName' => 'jobName',
+                        'type' => 'string',
+                        'columnName' => 'job_name',
+                        'length' => 50,
+                    ],
+                    'status' => [
+                        'fieldName' => 'status',
+                        'type' => 'integer',
+                        'columnName' => 'status',
+                    ],
+                    'connector' => [
+                        'fieldName' => 'connector',
+                        'type' => 'string',
+                        'columnName' => 'connector',
+                        'length' => 255,
+                    ],
+                    'rawParameters' => [
+                        'fieldName' => 'rawParameters',
+                        'type' => 'array',
+                        'columnName' => 'raw_parameters',
+                    ],
+                    'scheduled' => [
+                        'fieldName' => 'scheduled',
+                        'type' => 'boolean',
+                        'columnName' => 'scheduled',
+                        'options' => [
+                            'default' => false,
+                        ],
+                    ],
+                    'automation' => [
+                        'fieldName' => 'automation',
+                        'type' => 'json',
+                        'columnName' => 'automation',
+                        'nullable' => true,
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'type',
+                        'length' => 255,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'label' => 'label',
+                    'job_name' => 'jobName',
+                    'status' => 'status',
+                    'connector' => 'connector',
+                    'raw_parameters' => 'rawParameters',
+                    'scheduled' => 'scheduled',
+                    'automation' => 'automation',
+                    'type' => 'type',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'label' => 'label',
+                    'jobName' => 'job_name',
+                    'status' => 'status',
+                    'connector' => 'connector',
+                    'rawParameters' => 'raw_parameters',
+                    'scheduled' => 'scheduled',
+                    'automation' => 'automation',
+                    'type' => 'type',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'akeneo_batch_job_instance',
+                    'uniqueConstraints' => [
+                        'searchunique_idx' => [
+                            'columns' => [
+                                'code',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'jobExecutions' => [
+                        'fieldName' => 'jobExecutions',
+                        'targetEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\JobExecution',
+                        'mappedBy' => 'jobInstance',
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'Akeneo\\Tool\\Component\\Batch\\Model\\JobInstance',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'changeTrackingPolicy' => [
+                2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,3 @@
+<?php //Akeneo_Pim_Enrichment_Component_Product_Model_ProductModel_%24GEDMO_TIMESTAMPABLE_CLASSMETADATA
+
+return [PHP_INT_MAX, []];

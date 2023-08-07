@@ -1,0 +1,75 @@
+<?php //FOS__OAuthServerBundle__Entity__Client__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'FOS\\OAuthServerBundle\\Entity\\Client',
+            ],
+            'namespace' => [
+                'FOS\\OAuthServerBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'FOS\\OAuthServerBundle\\Entity\\Client',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'fieldMappings' => [
+                [
+                    'randomId' => [
+                        'fieldName' => 'randomId',
+                        'type' => 'string',
+                        'columnName' => 'random_id',
+                    ],
+                    'redirectUris' => [
+                        'fieldName' => 'redirectUris',
+                        'type' => 'array',
+                        'columnName' => 'redirect_uris',
+                    ],
+                    'secret' => [
+                        'fieldName' => 'secret',
+                        'type' => 'string',
+                        'columnName' => 'secret',
+                    ],
+                    'allowedGrantTypes' => [
+                        'fieldName' => 'allowedGrantTypes',
+                        'type' => 'array',
+                        'columnName' => 'allowed_grant_types',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'random_id' => 'randomId',
+                    'redirect_uris' => 'redirectUris',
+                    'secret' => 'secret',
+                    'allowed_grant_types' => 'allowedGrantTypes',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'randomId' => 'random_id',
+                    'redirectUris' => 'redirect_uris',
+                    'secret' => 'secret',
+                    'allowedGrantTypes' => 'allowed_grant_types',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'Client',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
