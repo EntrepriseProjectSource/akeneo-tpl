@@ -1,0 +1,5 @@
+[2023-08-29T14:00:22.347844+00:00] batch.DEBUG: Job execution starting: startTime=, endTime=, updatedTime=, status=2, exitStatus=[UNKNOWN] , exitDescription=[], job=[versioning_refresh] [] []
+[2023-08-29T14:00:22.357301+00:00] batch.INFO: Step execution starting: id=39, name=[versioning_refresh], status=[2], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T14:00:22.362458+00:00] batch.DEBUG: Step execution success: id= 39 [] []
+[2023-08-29T14:00:22.362520+00:00] batch.INFO: Step execution complete: id=39, name=[versioning_refresh], status=[1], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T14:00:22.365832+00:00] batch.DEBUG: Upgrading JobExecution status: startTime=2023-08-29T14:00:22+00:00, endTime=, updatedTime=, status=3, exitStatus=[UNKNOWN] , exitDescription=[], job=[versioning_refresh] [] []

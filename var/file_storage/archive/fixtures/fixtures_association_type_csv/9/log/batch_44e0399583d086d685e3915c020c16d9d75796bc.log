@@ -1,0 +1,8 @@
+[2023-08-29T13:59:56.494386+00:00] batch.DEBUG: Job execution starting: startTime=, endTime=, updatedTime=, status=2, exitStatus=[UNKNOWN] , exitDescription=[], job=[fixtures_association_type_csv] [] []
+[2023-08-29T13:59:56.502218+00:00] batch.INFO: Step execution starting: id=0, name=[validation], status=[2], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T13:59:56.515095+00:00] batch.DEBUG: Step execution success: id= 17 [] []
+[2023-08-29T13:59:56.515175+00:00] batch.INFO: Step execution complete: id=17, name=[validation], status=[1], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T13:59:56.526967+00:00] batch.INFO: Step execution starting: id=18, name=[import], status=[2], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T13:59:56.573764+00:00] batch.DEBUG: Step execution success: id= 18 [] []
+[2023-08-29T13:59:56.573856+00:00] batch.INFO: Step execution complete: id=18, name=[import], status=[1], exitCode=[EXECUTING], exitDescription=[] [] []
+[2023-08-29T13:59:56.582406+00:00] batch.DEBUG: Upgrading JobExecution status: startTime=2023-08-29T13:59:56+00:00, endTime=, updatedTime=, status=3, exitStatus=[UNKNOWN] , exitDescription=[], job=[fixtures_association_type_csv] [] []

@@ -47,8 +47,8 @@ services:
       CYPRESS_CACHE_FOLDER: '/home/node/.cypress'
     volumes:
       - './:/srv/pim'
-      - '${HOST_YARN_CACHE_FOLDER:-~/.cache/yarn}:/home/node/.yarn'
-      - '${HOST_CYPRESS_CACHE_FOLDER:-~/.cache/Cypress}:/home/node/.cypress'
+      - '.cache/yarn:/home/node/.yarn'
+      - '.cache/Cypress:/home/node/.cypress'
     working_dir: '/srv/pim'
     networks:
       - 'pim'
